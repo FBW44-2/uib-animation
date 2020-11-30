@@ -1,0 +1,56 @@
+.page  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    overflow: hidden;
+
+    width: 400px;
+    height: 400px;
+
+    box-shadow: 0 0 20px rgba(0,0,0, 0.7);
+
+    background-image: url(../images/david-kovalenko-aQzh7VC-0H0-unsplash.jpg);
+    background-size: cover;
+
+    color: #f3f3f3;
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.687);
+    padding: 4px 8px;
+    text-align: center;
+
+    animation: slider 5s 4s infinite forwards;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(-400px);
+    }
+
+    30% {
+        transform: scale(1) translateX(0);
+    }
+
+    50% {
+        transform: scale(1.5) translateX(0);
+    }
+
+    70% {
+        transform: scale(1) translateX(0);
+    }
+
+    100% {
+        transform: translateX(400px);
+    }
+}
+
